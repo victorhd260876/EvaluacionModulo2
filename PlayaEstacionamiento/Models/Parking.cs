@@ -12,7 +12,10 @@ namespace PlayaEstacionamiento.Models
         public ParkingStatus Status { get; set; }
         public override string ToString()
         {
-            return $"Parking: #{Id}, CustomerId: {CustomerId}, ParkingId: {ParkingId}";
+            return $"Parking: #{Id}, CustomerId: {CustomerId}, ParkingId: {ParkingId}, " +
+                $"Date: {Date.ToShortDateString()}, Time: {Time}, Status: {Status}";
         }
     }
+
+    
 }
