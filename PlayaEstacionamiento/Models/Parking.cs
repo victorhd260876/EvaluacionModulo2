@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace PlayaEstacionamiento.Models
 {
-    internal class Parking
+    public class Parking
     {
+        public int Id { get; set; }
+        public int CustomerId { get; set; }
+        public int ParkingId { get; set; }
+        public DateTime Date { get; set; }
+        public TimeSpan Time { get; set; }
+        public ParkingStatus Status { get; set; }
+        public override string ToString()
+        {
+            return $"Parking: #{Id}, CustomerId: {CustomerId}, ParkingId: {ParkingId}";
+        }
     }
 }
