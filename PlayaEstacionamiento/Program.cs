@@ -15,6 +15,7 @@
 
             //inicializando aplicación
             ui.Run();
+            Console.WriteLine("prueba de impresion");
 
 
         }
