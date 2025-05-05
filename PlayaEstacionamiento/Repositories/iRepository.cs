@@ -2,7 +2,7 @@
 namespace PlayaEstacionamiento.Respositories
 {
     //interfas generica q funciona con cualquier clase
-    public interface IRepository
+    public interface IRepository<T>
     {
         List<T> GetAll(); //metodos genericos q se pueden utilizar en cualquier clase
         T GetById(int id);
