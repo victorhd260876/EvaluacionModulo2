@@ -1,6 +1,6 @@
 ﻿
 using PlayaEstacionamiento.Models;
-using PlayaEstacionamiento.Respositories;
+using PlayaEstacionamiento.Repositories;
 
 namespace PlayaEstacionamiento.Repositories
 {
@@ -39,9 +39,9 @@ namespace PlayaEstacionamiento.Repositories
         }
 
 
-        public Customer GetByEmail(string email)
+        public Customer GetByDni(string dni)
         {
-            return _customers.FirstOrDefault(x => x.Email == email);
+            return _customers.FirstOrDefault(x => x.Dni == dni);
         }
 
 

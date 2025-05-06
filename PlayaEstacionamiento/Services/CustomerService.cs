@@ -1,5 +1,5 @@
 ﻿using PlayaEstacionamiento.Models;
-using PlayaEstacionamiento.Respositories;
+using PlayaEstacionamiento.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,16 +19,16 @@ namespace PlayaEstacionamiento.Services
             this._parkingRepository = parkingRepository;
         }
         
-        public Customer GetOrCreateCustomer(string name, string email, string phone)
+        public Customer GetOrCreateCustomer(string name, string dni, string phone)
         {
-            var customer = _customerRepository.GetByEmail(email);
+            var customer = _customerRepository.GetByDni(dni);
 
             if (customer == null)
             {
                 customer = new Customer
                 {
                     Name = name,
-                    Email = email,
+                    Dni = dni,
                     PhoneNumber = phone
                 };
                 _customerRepository.Add(customer);
@@ -36,9 +36,9 @@ namespace PlayaEstacionamiento.Services
             return customer;
         }
 
-        public Customer GetCustomerByEmail(string email)
+        public Customer GetCustomerByDni(string dni)
         {
-            return _customerRepository.GetByEmail(email);
+            return _customerRepository.GetByDni(dni);
         }
 
         public Customer GetCustomerById(int id)

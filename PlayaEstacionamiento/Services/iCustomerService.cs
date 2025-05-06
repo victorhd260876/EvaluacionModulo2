@@ -9,10 +9,10 @@ namespace PlayaEstacionamiento.Services
 {
     public interface iCustomerService
     {
-        Customer GetOrCreateCustomer(string name, string email, string phone );
+        Customer GetOrCreateCustomer(string name, string dni, string phone);
         Customer GetCustomerById(int id);
         List<Customer> GetCustomers();
-        Customer GetCustomerByEmail(string email);
+        Customer GetCustomerByDni(string dni);
         List<Parking> GetCustomerParking(int customerId);
     }
 }

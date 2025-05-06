@@ -1,15 +1,10 @@
 ﻿using PlayaEstacionamiento.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlayaEstacionamiento.Services
 {
-    public interface iGarageService
+    public interface IGarageService
     {
-        List<Garage> GetAvailableGarage(DateTime date, int Size);
+        List<Garage> GetAvailableGarage(DateTime date, int size); //DateTime date, int Size
         Garage GetGarageById(int id);
         List<Garage> GetAllGarage();
     }

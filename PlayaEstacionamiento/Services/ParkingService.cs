@@ -1,5 +1,5 @@
 ﻿using PlayaEstacionamiento.Models;
-using PlayaEstacionamiento.Respositories;
+using PlayaEstacionamiento.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +10,11 @@ namespace PlayaEstacionamiento.Services
 {
     public class ParkingService : iParkingService
     {
-        private readonly IParkingRepository _parkingRepository
+        private readonly IParkingRepository _parkingRepository;
 
         public ParkingService(IParkingRepository parkingRepository)
         {
-            this._parkingRepository = parkingRepository
+            this._parkingRepository = parkingRepository;
         }
 
 

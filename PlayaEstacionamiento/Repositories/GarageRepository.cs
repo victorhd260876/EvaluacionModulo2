@@ -1,5 +1,5 @@
 ﻿using PlayaEstacionamiento.Models;
-using PlayaEstacionamiento.Respositories;
+using PlayaEstacionamiento.Repositories;
 
 namespace PlayaEstacionamiento.Repositories
 {
@@ -10,16 +10,16 @@ namespace PlayaEstacionamiento.Repositories
 
         public GarageRepository() 
         {
-            _garage.Add(new Garage { Id = _nextId++, Number = 1, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 2, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 3, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 4, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 5, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 6, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 7, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 8, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 9, Size = 1, IsAvailable = true, Ubication = 1 });
-            _garage.Add(new Garage { Id = _nextId++, Number = 10, Size = 1, IsAvailable = true, Ubication = 1 });
+            _garage.Add(new Garage { Id = _nextId++, Number = 1, Size = 1, IsAvailable = true, Ubication = "s1" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 2, Size = 1, IsAvailable = true, Ubication = "s1" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 3, Size = 1, IsAvailable = true, Ubication = "s1" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 4, Size = 1, IsAvailable = true, Ubication = "s1" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 5, Size = 1, IsAvailable = true, Ubication = "s1" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 6, Size = 1, IsAvailable = true, Ubication = "s2" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 7, Size = 1, IsAvailable = true, Ubication = "s2" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 8, Size = 1, IsAvailable = true, Ubication = "s3" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 9, Size = 1, IsAvailable = true, Ubication = "s3" });
+            _garage.Add(new Garage { Id = _nextId++, Number = 10, Size = 1, IsAvailable = true, Ubication = "s3" });
         }
 
         public List<Garage> GetAll()

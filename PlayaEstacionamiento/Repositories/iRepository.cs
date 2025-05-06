@@ -1,5 +1,5 @@
 ﻿
-namespace PlayaEstacionamiento.Respositories
+namespace PlayaEstacionamiento.Repositories
 {
     //interfas generica q funciona con cualquier clase
     public interface IRepository<T>

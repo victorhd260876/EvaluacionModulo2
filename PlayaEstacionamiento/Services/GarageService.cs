@@ -1,15 +1,10 @@
 ﻿using PlayaEstacionamiento.Models;
 using PlayaEstacionamiento.Repositories;
-using PlayaEstacionamiento.Respositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace PlayaEstacionamiento.Services
 {
-    public class GarageService : iGarageService
+    public class GarageService : IGarageService
     {
         private readonly IGarageRepository _garageRepository;
 

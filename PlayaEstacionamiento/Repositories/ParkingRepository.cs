@@ -1,5 +1,5 @@
 ﻿using PlayaEstacionamiento.Models;
-using PlayaEstacionamiento.Respositories;
+using PlayaEstacionamiento.Repositories;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace PlayaEstacionamiento.Repositories

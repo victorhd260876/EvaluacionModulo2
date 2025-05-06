@@ -1,8 +1,7 @@
 using PlayaEstacionamiento.Models;
-using System;
-using System.Collections.Generic;
 
-namespace PlayaEstacionamiento.Respositories
+
+namespace PlayaEstacionamiento.Repositories
 {
 	public interface IGarageRepository : IRepository<Garage>
 	{

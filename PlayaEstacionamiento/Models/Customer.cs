@@ -6,15 +6,15 @@ namespace PlayaEstacionamiento.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Email { get; set; }
+        public string Dni { get; set; }
         public String PhoneNumber { get; set; }
-        public bool isVIP { get; set; }
+        public bool IsVIP { get; set; }
 
         public List<Parking> ParkingHistory { get; set; }=new List<Parking> { };
 
         public override string ToString()
         {
-            return $"Customer: {Name}, Email: {Email} ,Phone: {PhoneNumber}, VIP: {IsVIP}";
+            return $"Customer: {Name}, Dni: {Dni} ,Phone: {PhoneNumber}, VIP: {IsVIP}";
         }
 
     }

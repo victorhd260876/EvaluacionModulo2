@@ -8,9 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Utilities\" />
-    <Folder Include="UI\" />
-    <Folder Include="Services\" />
+    <Compile Remove="Utilities\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <None Remove="Utilities\**" />
   </ItemGroup>
 
 </Project>
